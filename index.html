@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="styles.css" />
+	<title>Canvas Discoball</title>
+</head>
+<body>
+	<canvas id="disco-ball">
+	</canvas>
+	<form id="settings">
+		<!-- <label>
+			interval
+			<input type="range" min="200" max="1000" value="200" id="draw-interval" />
+		</label> -->
+		<label>
+			lifetime
+			<input type="range" min="1" max="200" value="1" id="lifetime" />
+		<label>
+			color bias
+			<input type="range" min="0" max="1" value="0.75" step="0.01" id="color-bias-alpha" />	
+		</label>
+		<label>
+			color cycle period
+			<input type="range" min="0" max="1000" value="250" id="color-cycle-period" />	
+		</label>
+		<label>
+			grid size
+			<input type="range" min="0" max="200" value="50" id="grid-rectangles" />	
+		</label>
+		<label>
+			centrality adjustment
+			<input type="range" min="0" max="100" value="0" id="centrality-adjustment" />	
+		</label>
+		<label>
+			cascade
+			<input type="range" min="1" max="10" value="1" step="0.1" id="cascade" />	
+		</label>
+		<!-- <label>
+			monochrome
+			<input type="checkbox" id="monochrome" />	
+		</label> -->
+		<button class="randomize">randomize</button>
+	</form>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.3/jquery.min.js"></script>
+	<script src="http://documentcloud.github.com/underscore/underscore-min.js"></script>
+	<script src="http://documentcloud.github.com/backbone/backbone-min.js"></script>
+	<script src="script.js" defer></script>
+</body>
+</html>
