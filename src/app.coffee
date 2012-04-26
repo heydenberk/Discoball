@@ -1,8 +1,9 @@
 $(->
-    el = $("#settings")
-    model = new MuralOptions()
-    
-    optionsView = new MuralOptionsView({ el, model })
-    discoball = new Discoball($("#disco-ball"), optionsView.model)
-    discoball.run()
+    optionsElement = $("#options")
+    canvasElement = $("#discoball")
+
+    optionsView = new DiscoballOptionsView({ el: optionsElement, model: new DiscoballOptions() })
+    discoball = new Discoball(canvasElement)
+
+    discoball.run(optionsView.model)
 )
