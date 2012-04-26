@@ -6,21 +6,32 @@ html, body {
 	width: 100%;
 }
 * { padding: 0; margin: 0 }
-#settings {
+#options {
 	opacity: 0;
 	position: absolute;
 	left: 1em;
 	top: 0;
-	width: 25em;
 	-webkit-transition: opacity 1s linear;
 }
-	#settings label {
+	#options label {
 		clear: both;
 		float: left;
 		height: 2em;
 		line-height: 2em;
 	}
-#settings:hover {
+		#options label span.label-name {
+			display: inline-block;
+			width: 12em;
+		}
+#options:hover {
 	opacity: 1;
 	-webkit-transition: opacity 0.5s linear;
+}
+#fps-meter {
+	height: 3em;
+	line-height: 3em;
+	position: absolute;
+	right: 1em;
+	bottom: 0;
+	width: 5em;
 }
